@@ -1,4 +1,4 @@
 $("document").ready(function() {
   var myFlower = new CodeFlower("#codeflower", 600, 400);
-  myflower.update('data/bookkeeping.json');
+  myFlower.update('data/bookkeeping.json');
 });
