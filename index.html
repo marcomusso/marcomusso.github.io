@@ -6,7 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
     <meta name="description" content="marcomusso.github.io : my little (digital) closet" />
 
+    <script src="/javascripts/bootstrap-3.3.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="/javascripts/bootstrap-3.3.2/css/bootstrap.min.css">
+
+    <script src="/javascripts/d3-3.4.13/d3.min.js"></script>
+    <script src="/javascripts/CodeFlower.js"></script>
+
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <script src="/javascripts/main.js"></script>
+
+    <style type="text/css">
+      circle.node {
+        cursor: pointer;
+        stroke: #000;
+        stroke-width: .5px;
+      }
+
+      circle.node.directory {
+        stroke: #9ecae1;
+        stroke-width: 2px;
+      }
+
+      circle.node.collapsed {
+        stroke: #555;
+      }
+
+      .nodetext {
+        fill: #252929;
+        font-weight: bold;
+        text-shadow: 0 0 0.2em white;
+      }
+
+      line.link {
+        fill: none;
+        stroke: #9ecae1;
+        stroke-width: 1.5px;
+      }
+    </style>
 
     <title>marcomusso.github.io</title>
   </head>
@@ -17,29 +54,26 @@
     <div id="header_wrap" class="outer">
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/marcomusso">View on GitHub</a>
-
           <h1 id="project_title">marcomusso.github.io</h1>
           <h2 id="project_tagline">my little (digital) closet</h2>
-
         </header>
     </div>
 
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-my-github-pages" class="anchor" href="#welcome-to-my-github-pages"><span class="octicon octicon-link"></span></a>Welcome to my GitHub Pages.</h3>
-
-<p>Currently I'm working on a few private projects.</p>
-
-<p>I hope that I can share something about those projects in the near future...</p>
-
-<p>What's available right now:</p>
-
-<ul>
-<li><a href="https://github.com/marcomusso/nodebrain-contrib">nodebrain-contrib</a>: some useful files for a nb caboodle installation</li>
-<li><a href="https://github.com/marcomusso/bookkeeping">bookkeeping</a>: an example Mojolicious app to keep track of your invoices</li>
-</ul>
+        <h3><a name="welcome-to-my-github-pages" class="anchor" href="#welcome-to-my-github-pages"><span class="octicon octicon-link"></span></a>Welcome to my GitHub Pages.</h3>
+        <p>Currently I'm working on a few private projects.</p>
+        <p>I hope that I can share something about those projects in the near future...</p>
+        <p>What's available right now:</p>
+        <ul>
+          <li><a href="https://github.com/marcomusso/nodebrain-contrib">nodebrain-contrib</a>: some useful files for a nb caboodle installation</li>
+          <li><a href="https://github.com/marcomusso/bookkeeping">bookkeeping</a>: an example Mojolicious app to keep track of your invoices</li>
+        </ul>
+      </section>
+      <section id="codeflower_content" class="inner">
+        <p>My <a href="https://github.com/fzaninotto/CodeFlower">Code Flower</a> for the BookKeeping repo:</p>
+        <div id="codeflower" style="width:600px;height:400px"></div>
       </section>
     </div>
 
